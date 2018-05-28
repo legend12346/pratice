@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin: 0;padding: 0;font-family: 'Roboto Condensed', sans-serif;}
+	 .banner{height: 650px;position: absolute;top: 209px;overflow: hidden;width: 100%;}
+	#img1{width: 100%;z-index: 10;position: absolute;}
+	#steel{width: 191px;height: 117px;position: absolute;top: 92px;left: 261px;background: #e64b3b;text-align: center;color: white;}
+	#steel h1{line-height: 105px;font-size: 36px;}
+	#steel p{margin-top: -58px;font-size: 12px；}
+	.option{position: absolute;top:164px;left: 940px;height: 30px;overflow: hidden;}
+	.option ul li{list-style: none;float: left;margin-left: 40px;line-height: 40px;}
+	.option ul li a{text-decoration: none;color: grey;}
+	.option ul li a:hover{color: #9f98ef;}
+	.banner-text{text-align:  center;z-index: 11;color:#9f98ef;position: absolute;top: 403px;left: 50%;width: 1140px;margin-left: -570px;}
+	#more a{text-decoration: none;color: azure;line-height: 40px; }
+	#more{margin-top: 40px;width: 140px;height: 40px; position: absolute;top: 70px;left: 50%;margin-left: -70px;background:  #9f98ef;}
+	.banner-text h2{font-size: 40px;}
+	.banner-text h4{font-size: 16px;}
+	#readmore{width: 597px;height: 622px;position: absolute;top: 100px;left: 50%;margin-left: -299px;z-index: 12;background: white;padding: 30px;border: 1px solid black;
+	display: none;}
+	#img2{width: 597px;height: 290px;margin-top: -5px;}
+	#readmore p{line-height: 27px;color:black;}
+	#img3{margin-left: 577px;margin-top: -28px;}
+	#about{height: 77px;width: 1140px; position: absolute;top: 930px;left: 50%;margin-left: -570px;text-align: center;}
+	#about h3{font-size: 60px;color:#e75849;}
+	#about h4{font-size: 20px;}
+	#about p{line-height: 30px;font-size: 14px;}
+	#team {position: absolute;top: 1300px;width: 100%;height: 580px;text-align: center;background-image:url(slid.jpg);}
+	#team p{font-size: 60px;color:#e75849;margin-top: 70px;}
+	#team-p1{position: absolute;top: 219px;left: 382px;}
+	#team-p2{position: absolute;top: 219px;left: 680px;}
+	#team-p3{position: absolute;top: 219px;left: 978px;}
+	#team-p4{position: absolute;top: 219px;left: 1276px;}
+	#hezi{position: absolute;top: 1930px;height: 617px;width: 100%; text-align: center;}
+	#hezi p{font-size: 60px;color:#e75849;line-height: 80px;}
+	#hezi1 {width: 538px;height: 127px;border: 1px solid #9f98ef;position: absolute;top: 120px;left: 393px;text-align: left;}
+	#hezi2 {width: 538px;height: 127px;border: 1px solid #9f98ef;position: absolute;top: 120px;left: 966px;text-align: left;}
+	#hezi1 img{width: 150px;height: 128px;}
+	#hezi2 img{width: 150px;height: 128px;}
+	#hezi3 {width: 538px;height: 127px;border: 1px solid #9f98ef;position: absolute;top: 300px;left: 393px;text-align: left;}
+	#hezi4 {width: 538px;height: 127px;border: 1px solid #9f98ef;position: absolute;top: 300px;left: 966px;text-align: left;}
+	#hezi3 img{width: 150px;height: 128px;}
+	#hezi4 img{width: 150px;height: 128px;}
+	#hezi1 p{font-size: 20px;}
+	#txt1 {position: absolute;top:2070px;left: 580px;line-height: 30px;}
+	#txt1 h3{font-size: 20px;}
+	#txt2 h3{font-size: 20px;}
+	#txt3 h3{font-size: 20px;}
+	#txt4 h3{font-size: 20px;}
+	#txt2 {position: absolute;top:2070px;left: 1150px;line-height: 30px;}
+	#txt3 {position: absolute;top:2240px;left: 580px;line-height: 30px;}
+	#txt4 {position: absolute;top:2240px;left: 1150px;line-height: 30px;}
+	#pic {position: absolute;top: 2430px;width: 100%;text-align: center;}
+	#pic p{font-size: 60px;color: #e75849;}
+	#ul1 ul li{list-style: none;float: left;margin: 30px;text-align: center;}
+	#ul1{position: absolute;top: 100px;width: 100%;text-align: center;line-height: 40px;}
+	#ul1 span{margin-left:40px;}
+	#sk {position: absolute;top: 3540px;width: 100%;line-height: 70px;text-align: center;}
+    #sk p{font-size: 60px;color:#e75849;}
+	#sk-1 {position: absolute;top: 110px;left: 50%;margin-left: -370px;width: 640px;height: 200px;}
+	#sk-1 ul li{list-style: none;float: left;}
+	#sk-1-2 {position: absolute;top: 0;left: 220px;}
+	#sk-1-3 {position: absolute;top: 0;left: 440px;}
+	#sk-1-4 {position: absolute;top: 0;left: 660px;}
+	#ul1 img{width: 475px;height: 475px;}
+	#c1 {width: 475px;height: 475px;position: absolute;top: 37px;left: 0;}
+	#c2 {width: 475px;height: 475px;position: absolute;top: 37px;left:475px;}
+	#c3 {width: 475px;height: 475px;position: absolute;top: 37px;left:950px;}
+	#c4 {width: 475px;height: 475px;position: absolute;top: 37px;left:1425px;}
+	#c5 {width: 475px;height: 475px;position: absolute;top: 512px;left: 0;}
+	#c6 {width: 475px;height: 475px;position: absolute;top: 512px;left: 475px;}
+	#c7 {width: 475px;height: 475px;position: absolute;top: 512px;left: 950px;}
+	#c8 {width: 475px;height: 475px;position: absolute;top: 512px;left: 1425px;}
+</style>
+<script>
+	window.onload=function ()
+	{
+	 var oBtn=document.getElementById('more');
+	 var oDiv1=document.getElementById('readmore');
+	 var oBtn1=document.getElementById('img3');
+		oBtn.onclick=function ()
+		
+		{
+		oDiv1.style.display='block';
+	    }
+		oBtn1.onclick=function ()
+		{
+		 oDiv1.style.display='none';	
+		}
+	};
+	
+</script>
+
+</head>
+
+<body>
+<div id="steel">
+	<h1>STEEL</h1>
+	<br><p>Industry</p>
+	
+</div>
+<div class="option">
+	                   <ul class="ul1">
+							<li><a href="">Home</a></li>
+							<li><a href="">Team</a></li>
+							<li><a href="">Services</a></li>
+							<li><a href="">Portfolio</a></li>
+							<li><a href="">Contact Us</a></li>			
+						</ul>
+</div>
+<div class="banner" >
+<img id="img1" src="slid.jpg"/>
+
+</div>
+<div class="banner-text">
+								<h2>WELCOME TO STEEL INDUSTRY</h2>	
+								<h4>Lorem Ipsum was popularised In sit amet sapien eros Integer</h4>	
+								<div id="more">
+									<a href="#">Read More</a>
+								</div>	
+</div>
+<div id="readmore">
+   <img id="img3" src="close.png"/>
+    <img id="img2" src="slid.jpg"/>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at. Donec fringilla lacus eu pretium rutrum. Cras aliquet congue ullamcorper. Etiam mattis eros eu ullamcorper volutpat. Proin ut dui a urna efficitur varius. uisque molestie cursus mi et congue consectetur adipiscing elit cras rutrum iaculis enim, Lorem ipsum dolor sit amet, non convallis felis mattis at. Maecenas sodales tortor ac ligula ultrices dictum et quis urna. Etiam pulvinar metus neque, eget porttitor massa vulputate in. Fusce lacus purus, pulvinar ut lacinia id, sagittis eu mi. Vestibulum eleifend massa sem, eget dapibus turpis efficitur at. Aliquam viverra quis leo et efficitur. Nullam arcu risus, scelerisque quis interdum eget, fermentum viverra turpis. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut At vero eos </p>
+</div>
+<div id="about">
+			<h3 id="title">About Us </h3>
+			<div id="about-text">
+				<h4>Nulla at dolor at ipsum convallis pulvinar a non nunc non leo sollicitudin </h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at. Donec fringilla lacus eu pretium rutrum. Cras aliquet congue ullamcorper. Etiam mattis eros eu ullamcorper volutpat. Proin ut dui a urna efficitur varius.
+					uisque molestie cursus mi et congue consectetur adipiscing elit cras rutrum iaculis enim, Lorem ipsum dolor sit amet, non convallis felis mattis at. Maecenas sodales tortor ac ligula ultrices dictum et quis urna. Etiam pulvinar metus neque, eget porttitor massa vulputate in. Fusce lacus purus, pulvinar ut lacinia id, sagittis eu mi. Vestibulum eleifend massa sem, eget dapibus turpis efficitur at. Aliquam viverra quis leo et efficitur. Nullam arcu risus, scelerisque quis interdum eget, fermentum viverra turpis. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut At vero eos</p>
+			</div>
+</div>
+ 
+ <div id="team">
+  <p>Our Team</p>
+ 	<div id="team-p1"><img src="img1.jpg"/></div>
+ 	<div id="team-p2"><img src="img2.jpg"/></div>
+ 	<div id="team-p3"><img src="img3.jpg"/></div>
+ 	<div id="team-p4"><img src="img4.jpg"/></div>
+ </div>
+  <div id="hezi">
+  	<p>Whyd Choose Us</p>
+  	<div id="hezi1"><img class="team.p" src="1.png"/>
+							   
+	</div>
+  	<div id="hezi2"><img class="team.p" src="4.png"/></div>
+  	<div id="hezi3"><img class="team.p" src="2.png"/></div>
+  	<div id="hezi4"><img class="team.p" src="3.png"/></div>
+  	
+  </div>
+  <div id="txt1">
+  		<h3>VIVAMUS MAXIMUS ODIO EU</h3>		
+	  <p>In sit amet sapien eros Integer,Lorem Ipsum</P><P></P>was popularised </p>
+  	</div>
+  	 <div id="txt2">
+  		<h3>Aliquam faucibus</h3>		
+	  <p>In sit amet sapien eros Integer,Lorem Ipsum</P><P></P>was popularised </p>
+  	</div>
+  	<div id="txt3">
+  		<h3>Donec et nibh massa</h3>
+		<p>Itaque earum rerum hic tenetur a sapiente</p><p>delectus reiciendis maiores alias </p>
+  	</div>
+  	<div id="txt4">
+  		<h3>SED EGESTAS LIBERO VITAE ELIT</h3>
+		<p>Itaque earum rerum hic tenetur a sapiente</p><p>delectus reiciendis maiores alias </p>
+  	</div>
+  	<div id="pic">
+  		<p>Portfolio</p>
+  		<div id="ul1">
+			<span>All</span>
+			<span>Category1</span> 
+			<span>Category2</span> 
+			<span>Category3</span>  					
+			<br>
+			<div id="c1"><img src="g1.jpg"/></div>
+			<div id="c2"><img src="g2.jpg"/></div>
+			<div id="c3"><img src="g3.jpg"/></div>
+			<div id="c4"><img src="g4.jpg"/></div>
+			<div id="c5"><img src="g5.jpg"/></div>
+			<div id="c6"><img src="g6.jpg"/></div>
+			<div id="c7"><img src="g7.jpg"/></div>
+			<div id="c8"><img src="g8.jpg"/></div>
+			
+		</div>	
+  	</div>
+  	<div id="sk">
+  		<p>Our Skills</p>
+  		<div id="sk-1">
+  		     <div id="sk-1-1" data-percent="65"><div style="width: 110px; height: 110px;"><div class="ab" style="position: relative; text-align: center; width: 110px; height: 110px; border-radius: 100%; background-color: rgb(244, 238, 238); background-image: linear-gradient(324deg, transparent 50%, rgb(79, 82, 186) 50%), linear-gradient(90deg, rgb(79, 82, 186) 50%, transparent 50%);"><div class="cir" style="position: relative; top: 3px; left: 3px; text-align: center; width: 104px; height: 104px; border-radius: 100%; background-color: rgb(255, 255, 255);"><span class="perc" style="display: block; width: 110px; height: 110px; line-height: 110px; vertical-align: middle; font-size: 15px; font-weight: 500; color: rgb(79, 82, 186);">65%</span></div></div></div></div><br>
+  		     
+			<div id="sk-1-2" data-percent="95"><div style="width: 110px; height: 110px;"><div class="ab" style="position: relative; text-align: center; width: 110px; height: 110px; border-radius: 100%; background-color: rgb(244, 238, 238); background-image: linear-gradient(432deg, transparent 50%, rgb(233, 78, 2) 50%), linear-gradient(90deg, rgb(233, 78, 2) 50%, transparent 50%);"><div class="cir" style="position: relative; top: 3px; left: 3px; text-align: center; width: 104px; height: 104px; border-radius: 100%; background-color: rgb(255, 255, 255);"><span class="perc" style="display: block; width: 110px; height: 110px; line-height: 110px; vertical-align: middle; font-size: 15px; font-weight: 500; color: rgb(79, 82, 186);">95%</span></div></div></div></div><br>
+			  
+			<div id="sk-1-3" data-percent="85"><div style="width: 110px; height: 110px;"><div class="ab" style="position: relative; text-align: center; width: 110px; height: 110px; border-radius: 100%; background-color: rgb(244, 238, 238); background-image: linear-gradient(396deg, transparent 50%, rgb(242, 179, 63) 50%), linear-gradient(90deg, rgb(242, 179, 63) 50%, transparent 50%);"><div class="cir" style="position: relative; top: 3px; left: 3px; text-align: center; width: 104px; height: 104px; border-radius: 100%; background-color: rgb(255, 255, 255);"><span class="perc" style="display: block; width: 110px; height: 110px; line-height: 110px; vertical-align: middle; font-size: 15px; font-weight: 500; color: rgb(79, 82, 186);">85%</span></div></div></div></div><br>
+			   
+			<div id="sk-1-4" data-percent="72"><div style="width: 110px; height: 110px;"><div class="ab" style="position: relative; text-align: center; width: 110px; height: 110px; border-radius: 100%; background-color: rgb(244, 238, 238); background-image: linear-gradient(349deg, transparent 50%, rgb(121, 48, 42) 50%), linear-gradient(90deg, rgb(121, 48, 42) 50%, transparent 50%);"><div class="cir" style="position: relative; top: 3px; left: 3px; text-align: center; width: 104px; height: 104px; border-radius: 100%; background-color: rgb(255, 255, 255);"><span class="perc" style="display: block; width: 110px; height: 110px; line-height: 110px; vertical-align: middle; font-size: 15px; font-weight: 500; color: rgb(79, 82, 186);">72%</span></div></div></div></div><br>
+		    
+			   	
+  		</div>
+  	</div>
+
+  
+</body>
+   
+</html>
